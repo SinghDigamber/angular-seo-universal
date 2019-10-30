@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/add-song">Angular Universal SSR</a>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <button type="button" routerLink="/add-song" class="btn btn-outline-primary">Add Song</button>
+      </li>
+      <li class="nav-item active">
+        <button type="button" routerLink="/songs" class="btn btn-danger">View Songs</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,11 @@
+<form [formGroup]="songForm" (ngSubmit)="submit()">
+    <div class="form-group">
+        <label>Song</label>
+        <input type="text" class="form-control" formControlName="name" required="required" />
+    </div>
+    <div class="form-group">
+        <label>Artist</label>
+        <input type="text" class="form-control" formControlName="artist" required="required" />
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Add Song</button>
+</form>

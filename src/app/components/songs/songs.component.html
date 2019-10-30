@@ -1,0 +1,21 @@
+<table class="table">
+    <thead class="table-primary">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Song name</th>
+            <th scope="col">Artist name</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let song of Songs">
+            <th scope="row">{{song._id}}</th>
+            <td>{{song.name}}</td>
+            <td>{{song.artist}}</td>
+            <td>
+                <span class="edit" [routerLink]="['/edit-song/', song._id]">Edit</span>
+                <span class="delete" (click)="removeSong(song, i)">Delete</span>
+            </td>
+        </tr>
+    </tbody>
+</table>

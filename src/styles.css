@@ -1,0 +1,31 @@
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 900px;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+}
+
+table span {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.edit {
+    margin-right: 14px;
+    color: blue;
+}
+
+.delete {
+    color: red;
+}
+
+.btn-outline-primary {
+    margin-right: 10px;
+}
